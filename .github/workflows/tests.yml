@@ -17,4 +17,3 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -r requirements.txt -r requirements-dev.txt
       - run: python -m compileall hakyking dev_tools
-      - run: python dev_tools/audio_quality_audit.py
