@@ -61,6 +61,9 @@ python dev_tools\audio_quality_audit.py
 ```
 
 The optional acceptance runner reports missing local fixtures as `SKIP`.
+GitHub CI runs the portable public smoke checks; the full local suite also
+includes model-contract tests that are best run in the project's supported
+Windows environment.
 
 ## Build a Windows executable
 
