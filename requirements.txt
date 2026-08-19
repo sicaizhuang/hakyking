@@ -1,0 +1,13 @@
+PyQt5>=5.15
+numpy>=1.26
+librosa>=0.10
+soundfile>=0.12
+pyrubberband>=0.4
+sounddevice>=0.5
+pyworld>=0.3.5
+praat-parselmouth>=0.4.7
+rmvpe-onnx>=0.2.3
+onnxruntime>=1.27.0
+audioflux>=0.1.9
+# External runtime dependency for MP4 audio extraction: ffmpeg on PATH.
+# External runtime dependency for pitch/time processing: rubberband on PATH.

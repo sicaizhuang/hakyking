@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "samples": [
+    {
+      "id": "haya_kunalu",
+      "display_name": "哈呀库那路",
+      "path": "tests/fixtures/acceptance/haya_kunalu.wav",
+      "role": "short_vocal_phrase",
+      "expected": {
+        "sample_rate": 44100,
+        "channels": 2,
+        "duration_seconds": 2.912245,
+        "duration_tolerance_seconds": 0.01,
+        "parser_baseline_slice_count": 5,
+        "semantic_syllable_target": 5,
+        "midi_range": [60, 84],
+        "preview_rms_min": 0.0001
+      }
+    },
+    {
+      "id": "hakimi_x3",
+      "display_name": "哈基米哈基米哈基米",
+      "path": "tests/fixtures/acceptance/hakimi_x3.wav",
+      "role": "short_vocal_phrase",
+      "expected": {
+        "sample_rate": 44100,
+        "channels": 2,
+        "duration_seconds": 2.122698,
+        "duration_tolerance_seconds": 0.01,
+        "parser_baseline_slice_count": 9,
+        "semantic_syllable_target": 9,
+        "midi_range": [58, 78],
+        "preview_rms_min": 0.0001
+      }
+    },
+    {
+      "id": "sarilang_long_vocal",
+      "display_name": "火红的萨日朗长人声",
+      "path": "tests/fixtures/acceptance/sarilang_long_vocal.wav",
+      "role": "long_vocal_reference",
+      "expected": {
+        "sample_rate": 44100,
+        "channels": 2,
+        "duration_seconds": 230.997347,
+        "duration_tolerance_seconds": 0.02,
+        "stream_scan_seconds": 6.0,
+        "median_midi_range": [45, 62],
+        "preview_rms_min": 0.001
+      }
+    }
+  ]
+}
