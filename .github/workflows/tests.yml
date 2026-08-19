@@ -17,5 +17,16 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -r requirements.txt -r requirements-dev.txt
       - run: python -m compileall hakyking dev_tools
-      - run: python -m unittest discover -s tests -v
+      - name: Test model and project contracts
+        run: python -m unittest tests.test_audio_edit_model tests.test_project_reliability -v
+      - name: Test audio analysis and cache
+        run: python -m unittest tests.test_adaptive_pitch_engine tests.test_analysis_cache_and_fast_path -v
+      - name: Test DSP and render parity
+        run: python -m unittest tests.test_dynamic_pitch_map tests.test_mixdown_parity tests.test_render_result_cache -v
+      - name: Test pitch tools
+        run: python -m unittest tests.test_pitch_tool_contracts -v
+      - name: Test progressive UI pipeline
+        run: python -m unittest tests.test_progressive_ui_pipeline -v
+      - name: Test acceptance manifest
+        run: python -m unittest tests.test_acceptance_sample_manifest -v
       - run: python dev_tools/audio_quality_audit.py
